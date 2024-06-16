@@ -1,0 +1,179 @@
+body{
+    width: 1445px;
+    height: 1500px;
+    border: 5px solid black ; 
+}
+
+
+header{
+    padding: 60px;
+    background: #000000;
+    color: white;
+    font-size: 30px;
+    width: 1325px;
+}
+
+
+#search{
+    translate: 40px -25px;
+}
+
+
+#emm{
+    translate: 20px ;
+}
+
+
+#cartbutton{
+    translate: 425px -10px;
+}
+
+
+#selectlan{
+    translate: 460px -25px;
+}
+
+
+#probut{
+    translate: 500px 0px;
+}
+
+
+#contact_but{
+    translate: 400px -14px;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+.button_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    translate: 70px ;
+}
+
+
+.button_items{
+    width: 250px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 6%;
+    font-size: x-large;
+}
+
+
+#wisbut{
+    background-color: #e4c190;
+}
+
+
+#onlybut{
+    background-color: rgb(148, 157, 172);
+}
+
+
+.product_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-size: x-large;
+    width: 99%;
+    translate: 7px -80px;
+}
+
+
+.product_item {
+    width: 330px;
+    border: 2.5px solid black;
+    border-radius: 5%;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);  
+}
+
+
+.product_item img {
+    width: 100%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+
+.product_cart{
+    scale: 150%;
+    translate: 0 -50%;
+}
+
+
+
+.entre_mang{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    translate: 85px ;
+}
+.entre_item{
+    width: 8%;
+    height: 8%;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.entre_item p{
+    translate: 100px -100px;
+}
+
+.entre_item img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#contact_para{
+    font-size: 40px;
+    translate: 200px 50px;
+}
+
+
+#cartpageh1{
+    font-size: xx-large;
+}
+
+
+#sec1{
+    float: left;
+    width: 55%;
+    height: 40%;
+    border: solid 3px black;
+    background-color: #ffdabe;
+    transform: translate(5%);
+    border-radius: 6%;
+    font-size: large;
+}
+#asid1{
+    float: right;
+    width: 35%;
+    height: 40%;
+    border: solid 3px black;
+    background-color: #ffdabe;
+    transform: translate(-5%);
+    border-radius: 6%;  
+}
+
+#constr{
+    scale:30%;
+    translate: -450px -300px;
+    position: fixed;
+}
+#op{
+    border-width: 0px ;
+}
+#const{
+    scale:15%;
+    translate: 235px -300px;
+    position: fixed;
+}
