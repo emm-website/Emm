@@ -9,7 +9,7 @@ function add() {
 function sure() {
     if (confirm("refresh the page?")) {
         alert("Page Refreshed")
-    
+        github.location.href= 'index.html'
     }
 }
 
