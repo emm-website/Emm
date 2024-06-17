@@ -9,20 +9,20 @@ function add() {
 function sure() {
     if (confirm("refresh the page?")) {
         alert("Page Refreshed")
-        github.location.href= 'index.html'
+        location.href= 'index.html'
     }
 }
 
 function goback() {
-    window.location.href = 'index.html';    
+    location.href = 'index.html';    
 }
 
 function contact() {
-    window.location.href = 'contact.html';   
+    location.href = 'contact.html';   
 }
 
 function cart() {
-    window.location.href = 'cart.html';   
+    location.href = 'cart.html';   
 }
 
 
