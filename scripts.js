@@ -9,7 +9,7 @@ function add() {
 function sure() {
     if (confirm("refresh the page?")) {
         alert("Page Refreshed")
-        window.location.href = 'index.html'    
+    
     }
 }
 
