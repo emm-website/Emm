@@ -7,12 +7,25 @@ function add() {
 }
 
 function sure() {
-    alert("page refreshed")
+    if (confirm("refresh the page?")) {
+        alert("Page Refreshed")
+        window.location.href = 'index.html'    
+    }
 }
 
 function goback() {
     window.location.href = 'index.html';    
 }
 
+function contact() {
+    window.location.href = 'contact.html';   
+}
+
+function cart() {
+    window.location.href = 'cart.html';   
+}
 
 
+function profile() {
+    window.location.href = 'profile.html';   
+}
