@@ -3,160 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Emm</title>
-    <link rel="icon" type="image/png" href="emm.png">
+    <link rel="icon" type="image/png" href="Images/emm.png">
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" async></script>
 </head>
-<body background="burlywood.jpg">
-
-        <header>
-
-            <img src="Navigation.png" alt="" height="4%" width="4%" style="position: relative; top: -6px;">
-
-            <img src="emm.png" alt="" id="emm" height="5%" width="5%" onclick="sure()">
-
-            <input type="text" id="search" placeholder="saisir un produit" style="height: 30px; width: 200px; font-size: 20px;">
+<body onload="nadd()"> 
+    <header>
             
-            <img src="contact.png" alt="" height="10%" width="10%" id="contact_but" onclick="contact()">
+        <img src="Images/Navigation.png" alt="" height="5%" width="5%" style="position: relative; top: -6px;">
+    
+        <img src="Images/emm.png" alt="" id="emm" height="5%" width="5%" onclick="sure()">
+    
+        <input type="text" id="search" placeholder="saisir un produit" style="height: 30px; width: 200px; font-size: 20px;">
+    
+        <label id="" style="position: relative; right: -300px; top: -25px;" onclick="contact()">About us</label>
+    
+        <img src="Images/cart.png" alt="" height="4.5%" width="4.5%" id="cartbutton" onclick="cart()">
+    
+        <label id="cart" style="position: relative; right: -335px; top: -25px;" onclick="cart()"></label>
+    
+        <select name="" id="selectlan" style="height: 35px; width: 140px; font-size: 20px;" >
+            <option value="" selected disabled>Language</option>
+            <option value="">English</option>
+            <option value="">Francais</option>
+            <option value="">العربية</option>
+        </select>
+    
+        <img src="Images/profile.png" alt="" height="5%" width="5%" id="probut" onclick="profile()">
+    
+    </header>
 
-            <img src="cart.png" alt="" height="4%" width="4%" id="cartbutton" onclick="cart()">
+       
 
-            <label id="cart" style="position: relative; right: -425px; top: -25px;" onclick="cart()">Cart()</label>
-
-            <select name="" id="selectlan" style="height: 35px; width: 120px; font-size: 20px;" >
-                <option value="" selected disabled>Language</option>
-                <option value="">English</option>
-                <option value="">Francais</option>
-                <option value="">العربية</option>
-            </select>
-
-            <img src="profile.png" alt="" height="5%" width="5%" id="probut" onclick="profile()">
-
-        </header>
-
-
-    <p></p>
+    <section>
     <div class="entre_mang">
         
-      <div class="entre_item">
-          <a href="wristopia.html">
-          <img src="wss.png" alt="" height="5%" width="5%">
-          </a>
-          <p>Wristopia</p>
+      <div class="entre_item" id="wristopia.html" onclick="go(id)">
+          <img src="Images/wss.png" alt="" height="5%" width="5%">
+          <p font-family="cursive" >Wristopia</p>
       </div>
 
-      <div class="entre_item">
-          <a href="onlystickers.html">
-              <img src="os.png" alt="" height="5%" width="5%">
-          </a>
-          
+      <div class="entre_item" id="onlystickers.html"  onclick="go(id)">
+          <img src="Images/os.png" alt="" height="5%" width="5%">       
           <p>onlystickers</p>
       </div>
 
-      <div class="entre_item">
-          <a href="coupdefoudre.html">
-              <img src="cdf.png" alt="" height="5%" width="5%">
-          </a>
-          
+      <div class="entre_item" id="coupdefoudre.html"  onclick="go(id)">
+          <img src="Images/cdf.png" alt="" height="5%" width="5%">
           <p>coupdefoudre</p>
       </div>
 
-      <div class="entre_item">
-          <a href="taktak.html">
-              <img  src="tak.png" alt="" height="5%" width="5%">
-          </a>
-          
+      <div class="entre_item" id="taktak.html" onclick="go(id)">
+          <img  src="Images/tak.png" alt="" height="5%" width="5%">
           <p>taktak</p>
       </div>
 
-  </div>
+  </div> 
 
-    <div class="product_container">
+    <img src="Images/wallpaper1.JPG" alt="" id="wallpaper1">
+</section>
     
-        <div class="product_item">
-          <a href="">
-            <img src="silverI(small).png" alt="">
-          </a>
-          <h3 class="product_title">ring silver 1</h3>
-          <p class="product_description">this product is awesome</p>
-          <p class="product_price">10dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
+<footer>
+    <div id="footer"> 
+        <div>
+            <h3>Product</h3>
+            <p onclick="go(id)" id="">accesories</p>
+            <p onclick="go(id)" id="">stickers</p>
         </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="dumbneck(small).jpg" alt="">
-          </a>
-          <h3 class="product_title">dumbneck</h3>
-          <p>this product is awesome</p>
-          <p>7dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-      
-        <div class="product_item">
-          <a href="">
-            <img src="silverI(small).png" alt="">
-          </a>
-          <h3 class="product_title">ring silver 1</h3>
-          <p class="product_description">this product is awesome</p>
-          <p class="product_price">10dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="dumbneck(small).jpg" alt="">
-          </a>
-          <h3 class="product_title">dumbneck</h3>
-          <p>this product is awesome</p>
-          <p>7dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="silverI(small).png" alt="">
-          </a>
-          <h3 class="product_title">ring silver 1</h3>
-          <p class="product_description">this product is awesome</p>
-          <p class="product_price">10dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="dumbneck(small).jpg" alt="">
-          </a>
-          <h3 class="product_title">dumbneck</h3>
-          <p>this product is awesome</p>
-          <p>7dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="silverI(small).png" alt="">
-          </a>
-          <h3 class="product_title">ring silver 1</h3>
-          <p class="product_description">this product is awesome</p>
-          <p class="product_price">10dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
-        <div class="product_item">
-          <a href="">
-            <img src="dumbneck(small).jpg" alt="">
-          </a>
-          <h3 class="product_title">dumbneck</h3>
-          <p>this product is awesome</p>
-          <p>7dt</p>
-          <input class="product_cart" type="button" value="Add to cart" onclick="add()">
-        </div>
-    
+
+        <div>
+            <h3>Features</h3>
+            <p onclick="go(id)" id="">fund-support</p>
+            <p onclick="go(id)" id="">social-support</p>
+            <p onclick="go(id)" id="">delivery section</p>
+        </div> 
+
+        <div>
+            <h3>Company</h3>
+            <p onclick="go(id)" id="Wristopia.html">Wristopia</p>
+            <p onclick="go(id)" id="onlystickers.html">OnlyStickers</p>
+            <p onclick="go(id)" id="coupdefoudre.html">CoupDeFoudre</p>
+        </div> 
         
-    
-      </div>
-
+        <div>
+            <h3>Support</h3>
+            <p onclick="go(id)" id="https://www.instagram.com/lts_emm">Our Instagram</p>
+            <p onclick="go(id)" id="https://www.facebook.com/profile.php?id=61556735600515">Our Facebook</p>
+            <p onclick="go(id)" id="https://web.whatsapp.com">Our Whatsapp</p>
+        </div> 
+    </div>
+     
+</footer>
 
 
 </body>
