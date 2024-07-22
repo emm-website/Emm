@@ -3,47 +3,114 @@
     <head>
         <meta charset="UTF-8">
         <title>Emm</title>
-        <link rel="icon" type="image/png" href="emm.png">
+        <link rel="icon" type="image/png" href="Images/emm.png">
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
+        <script src="scripts.js" async></script>
     </head>
-<body bgcolor="black" id="op">
-    <!-- <header>
 
-        <img src="Navigation.png" alt="" height="4%" width="4%" style="position: relative; top: -6px;">
-
-        <img src="emm.png" alt="" id="emm" height="5%" width="5%" onclick="sure()">
-
+<body class="cartpage"  onload="nadd()"> 
+    <header>
+            
+        <img src="Images/Navigation.png" alt="" height="5%" width="5%" style="position: relative; top: -6px;">
+    
+        <img src="Images/emm.png" alt="" id="emm" height="5%" width="5%" onclick="sure()">
+    
         <input type="text" id="search" placeholder="saisir un produit" style="height: 30px; width: 200px; font-size: 20px;">
-        
-        <img src="contact.png" alt="" height="10%" width="10%" id="contact_but" onclick="contact()">
-
-        <img src="cart.png" alt="" height="4%" width="4%" id="cartbutton" onclick="cart()">
-
-        <label id="cart" style="position: relative; right: -425px; top: -25px;" onclick="cart()">Cart()</label>
-
-        <select name="" id="selectlan" style="height: 35px; width: 120px; font-size: 20px;" >
+    
+        <label id="" style="position: relative; right: -300px; top: -25px;" onclick="contact()">About us</label>
+    
+        <img src="Images/cart.png" alt="" height="4.5%" width="4.5%" id="cartbutton" onclick="cart()">
+    
+        <label id="cart" style="position: relative; right: -335px; top: -25px;" onclick="cart()"></label>
+    
+        <select name="" id="selectlan" style="height: 35px; width: 140px; font-size: 20px;" >
             <option value="" selected disabled>Language</option>
             <option value="">English</option>
             <option value="">Francais</option>
             <option value="">العربية</option>
         </select>
-
-        <img src="profile.png" alt="" height="5%" width="5%" id="probut" onclick="profile()">
-
+    
+        <img src="Images/profile.png" alt="" height="5%" width="5%" id="probut" onclick="profile()">
+    
     </header>
     
     <h1>Cart Page</h1>      
+    <div class="classCartItems">
+    <section id="sec1" style=" width: 60%; height: max-content;">
+        <div class="fit-ItemName"> <span>Image</span> <span>Name</span> <span>Price</span> <span>Qty</span> <span>SubTotal</span> </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/gem_purple.JPG" width="100" height="100">
+                    <span class="cart-item-title">purple-gem bracelet</span>
+                </div>
+                <span class="cart-price cart-column">6dt</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <span class="sub-total">6dt</span>
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+               <div class="cart-row">
+            <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/dumbneck(small).jpg" width="100" height="100">
+                    <span class="cart-item-title">dummbell necklace</span>
+                </div>
+                <span class="cart-price cart-column">10dt</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <span class="sub-total">20dt</span>
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
 
-    <section id="sec1">
-        <p>sdq</p>
+            <input type="button" value="Clear cart" id="clearcart" style="height: 50px; width: 200px;" onclick="resetcart()">
 
+        </div>
     </section>
-    <aside id="asid1">
-        
-    </aside>     -->
+    <aside id="asid1" style="height: max-content; width: 35%;">    
+        <h1>Total</h1>
+        <span class="Total-price">$36.99</span><br>
+        <input type="button" value="Checkout" style="width: 300px; height: 50px; font-size: xx-large;">
+    </aside>   
+
+    </div>
+  
+    <footer>
+        <div id="footer"> 
+            <div>
+                <h3>Product</h3>
+                <p onclick="go(id)" id="">accesories</p>
+                <p onclick="go(id)" id="">stickers</p>
+            </div>
     
-    <img src="Under-Construction.png" alt="" id="constr">
-    <img src="goback.png" alt="" id="const" onclick="goback()" onmouseover="mouse()">
+            <div>
+                <h3>Features</h3>
+                <p onclick="go(id)" id="">fund-support</p>
+                <p onclick="go(id)" id="">social-support</p>
+                <p onclick="go(id)" id="">delivery section</p>
+            </div> 
+    
+            <div>
+                <h3>Company</h3>
+                <p onclick="go(id)" id="Wristopia.html">Wristopia</p>
+                <p onclick="go(id)" id="onlystickers.html">OnlyStickers</p>
+                <p onclick="go(id)" id="coupdefoudre.html">CoupDeFoudre</p>
+            </div> 
+            
+            <div>
+                <h3>Support</h3>
+                <p onclick="go(id)" id="https://www.instagram.com/lts_emm">Our Instagram</p>
+                <p onclick="go(id)" id="https://www.facebook.com/profile.php?id=61556735600515">Our Facebook</p>
+                <p onclick="go(id)" id="https://web.whatsapp.com">Our Whatsapp</p>
+            </div> 
+        </div>
+         
+    </footer>
+
 </body>
 </html>
+
+
+
+         
