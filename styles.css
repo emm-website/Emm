@@ -52,7 +52,7 @@ body{
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: .9em;  
-    background-image: url("Images/background1.png");
+    background-image: url("images/background1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,11 +60,11 @@ body{
 }
 
 #back{
-    background-image: url("Images/backgroung-os.png");
+    background-image: url("images/backgroung-os.png");
 }
 
 #wsw{
-    background-image: url("Images/background-ws.png");
+    background-image: url("images/background-ws.png");
     
 }
 
